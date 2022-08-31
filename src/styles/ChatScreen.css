@@ -1,0 +1,65 @@
+.chatscreen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.5rem;
+}
+
+.chatscreen__matchedOn {
+  text-align: center;
+  color: #979ca2;
+}
+
+.chatscreen__messageDate {
+  text-align: center;
+  color: #979ca2;
+  font-size: small;
+}
+
+.chatscreen__message {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  height: 41px;
+
+  position: relative;
+}
+
+.chatscreen__avatar {
+  /* border-radius: 50%; */
+  display: flex;
+}
+
+.chatscreen__avatar > img {
+  width: 100%;
+  max-height: 2.5rem;
+  border-radius: 50%;
+}
+
+.chatscreen__avatar.myMessage {
+  flex: 1;
+  height: 41px;
+}
+
+.chatscreen__messageContainer {
+  text-align: center;
+
+  border-radius: 0.9rem;
+  height: 41px;
+  background-color: rgba(1, 1, 1, 0.05);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.chatscreen__messageContainer.myMessage {
+  background-color: #47a1ff;
+  color: white;
+}
+
+.chatscreen__heartIcon {
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,11 @@
+.chats {
+  /* height: 10vh; */
+  justify-self: flex-start;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+

@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* max-height: 15vh; */
+  align-items: stretch;
+  margin-top: 1rem;
+}
+
+.header__profileIcon {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.header__tinderLogo {
+  /* margin: 1rem; */
+}
+
+.header__username {
+  display: flex;
+}
+
+.header__tinderLogoImage {
+  width: 100%;
+  height: 4.33rem;
+  object-fit: contain;
+}
+
+.header__chatsIcon {
+  margin-right: 3rem;
+}

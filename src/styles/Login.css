@@ -1,0 +1,185 @@
+.login {
+  height: 100vh;
+  background-image: url("https://tinder.com/static/build/8ad4e4299ef5e377d2ef00ba5c94c44c.webp");
+  background-size: cover;
+  background-position: center;
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  /* z-index: 0; */
+}
+
+.login__gradient {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  /* z-index: 1; */
+}
+
+.login__header {
+  /* position: fixed; */
+  width: 100%;
+  color: white;
+  height: 82.8px;
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 1, 1, 0.8),
+    rgba(1, 1, 1, 0.79) 30%,
+    rgba(1, 1, 1, 0.75) 40%,
+    rgba(1, 1, 1, 0.7) 50%,
+    rgba(1, 1, 1, 0.67) 60%,
+    rgba(1, 1, 1, 0.6) 70%,
+    rgba(1, 1, 1, 0.5) 80%,
+    rgba(1, 1, 1, 0) 100%
+  );
+}
+
+.login__headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.login__headerLeft {
+  display: flex;
+  /* gap: 2vw; */
+  align-items: center;
+  margin-left: 3rem;
+  /* flex: 0.6; */
+  /* flex-basis: ; */
+  /* flex-shrink: 0; */
+  /* justify-content: space-between; */
+  /* flex: 0 0.8; */
+}
+
+.login__headerLogo {
+  padding: 0 0.3rem;
+  /* flex-basis: 0.4; */
+  /* flex-shrink: 0; */
+}
+
+.login__headerLogo img {
+  height: 3rem;
+  border-radius: 3rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 40%;
+}
+
+.login__actionLinks {
+  display: flex;
+  gap: 2rem;
+  /* flex-basis: 0.6; */
+  /* flex-shrink: 0; */
+}
+
+.login__headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-right: 3rem;
+}
+
+.login__headerRight > button {
+  color: black;
+  background-color: white;
+  border-radius: 1rem;
+  /* flex: 1; */
+}
+
+.login__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  color: white;
+  z-index: 1;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.login__center > h1 {
+  font-size: 7rem;
+}
+
+.login__center > button {
+  background: linear-gradient(to right, #ff4458 60%, rgba(255, 68, 88, 0.7));
+  width: 16rem;
+  min-height: 3rem;
+  border-radius: 3rem;
+}
+
+.login__loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  /* justify-content: stretch; */
+  gap: 1rem;
+}
+
+.login__loginContainer h3 {
+  text-decoration: underline !important;
+}
+
+.login__withGoogle {
+  display: flex;
+  align-items: center;
+}
+
+.login__withGoogle > img {
+  width: 15%;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.login__withFacebook {
+  display: flex;
+  align-items: center;
+}
+
+.login__withFacebook > img {
+  width: 15%;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.login__withNumber {
+  display: flex;
+  align-items: center;
+}
+
+.login__withNumber :first-child {
+  /* width: 2rem; */
+  margin: 0 1.2rem;
+}
+
+/* .login__withNumber {
+  width: 15%;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 50%;
+} */
+
+.login__loginContainer button {
+  border: solid 1.5px gray;
+  border-radius: 2rem;
+  flex: 1;
+}
+
+.login__tinderLogo img {
+  width: 100%;
+  height: 3rem;
+  object-fit: contain;
+}

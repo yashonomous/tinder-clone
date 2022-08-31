@@ -1,0 +1,25 @@
+.message__chat {
+  display: flex;
+  gap: 3rem;
+  cursor: pointer;
+}
+
+.message__avatar {
+  margin-left: 2rem;
+  border-radius: 3rem;
+  flex-shrink: 0;
+  width: 3.5rem;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.message__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.message__info h5 {
+  color: gray;
+}
