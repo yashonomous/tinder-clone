@@ -83,7 +83,7 @@
 .login__headerRight {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 3rem;
   margin-right: 3rem;
 }
@@ -182,4 +182,22 @@
   width: 100%;
   height: 3rem;
   object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .login__headerLeft {
+    margin-left: 0;
+  }
+
+  .login__headerRight {
+    margin-right: 0;
+    /* justify-content: flex-end; */
+    gap: 1rem;
+  }
+
+  .login__center > h1 {
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+  }
 }

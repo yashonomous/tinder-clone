@@ -8,6 +8,7 @@ import { auth, googleProvider } from "../commons/firebase";
 import { useStateValue } from "../commons/StateProvider";
 import { actionTypes } from "../commons/reducer";
 import { useNavigate } from "react-router-dom";
+import HamMenuDrawer from "./HamMenuDrawer";
 
 function getModalStyle() {
   const top = 50;
@@ -36,7 +37,7 @@ function Login() {
   const [openModal, setOpenModal] = useState(false);
   const [modalStyle] = React.useState(getModalStyle);
   const [showMoreOptions, setShowMoreOptions] = useState(false);
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user, windowSize }, dispatch] = useStateValue();
   const navigate = useNavigate();
 
   const handleClose = () => {
@@ -57,7 +58,7 @@ function Login() {
       });
   };
 
-  console.log(user);
+  //   console.log(windowSize);
 
   return (
     <div className="login">
@@ -68,24 +69,33 @@ function Login() {
             <div className="login__headerLogo">
               <img src="/tinder_logo.png" alt="tinder logo" />
             </div>
-            <div className="login__actionLinks">
-              {" "}
-              <h3>products</h3>
-              <h3>learn</h3>
-              <h3>safety</h3>
-              <h3>support</h3>
-              <h3>download</h3>
-            </div>
+            {windowSize.width >= 900 ? (
+              <div className="login__actionLinks">
+                <h3>products</h3>
+                <h3>learn</h3>
+                <h3>safety</h3>
+                <h3>support</h3>
+                <h3>download</h3>
+              </div>
+            ) : (
+              <h1>wid</h1>
+            )}
           </div>
           <div className="login__headerRight">
-            <h3>english</h3>
-            <Button
-              onClick={() => {
-                setOpenModal(true);
-              }}
-            >
-              log in
-            </Button>
+            {windowSize.width >= 900 ? (
+              <>
+                <h3>english</h3>
+                <Button
+                  onClick={() => {
+                    setOpenModal(true);
+                  }}
+                >
+                  log in
+                </Button>
+              </>
+            ) : (
+              <HamMenuDrawer setOpenModal={setOpenModal} />
+            )}
           </div>
         </div>
       </header>

@@ -10,6 +10,12 @@
   margin-left: 3rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.header__profileIcon > h3 {
+  color: lightgray;
 }
 
 .header__tinderLogo {
@@ -28,4 +34,18 @@
 
 .header__chatsIcon {
   margin-right: 3rem;
+}
+
+@media (max-width: 650px) {
+  .header__profileIcon {
+    margin-left: 0;
+  }
+
+  .header__chatsIcon {
+    margin-right: 0;
+  }
+
+  .header__profileIcon {
+    flex-direction: column;
+  }
 }

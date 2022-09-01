@@ -1,0 +1,60 @@
+.hammenudrawer__menuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hammenudrawer__logo {
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hammenudrawer__logo > img {
+  /* width: 15%; */
+  height: 4rem;
+  object-fit: contain;
+}
+
+.hammenudrawer__closeIcon {
+  margin-right: 1rem;
+}
+
+.hammenudrawer__menuItems {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.hammenudrawer__menuItem {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  background: #f0f2f4;
+  cursor: pointer;
+}
+
+.hammenudrawer__menuItem > h3 {
+  width: fit-content;
+}
+
+.hammenudrawer__productsItems {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  background: #f0f2f4;
+}
+
+.hammenudrawer__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hammenudrawer__footer > button {
+  background: linear-gradient(to right, #ff4458 60%, rgba(255, 68, 88, 0.7));
+  width: 16rem;
+  min-height: 3rem;
+  border-radius: 3rem;
+}

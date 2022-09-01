@@ -50,7 +50,7 @@ function Header() {
   const handleSignout = () => {
     setAnchorEl(null);
     signOut(auth).then(() => {
-      console.log("logged out");
+      // console.log("logged out");
       dispatch({
         type: actionTypes.SET_USER,
         user: {},
