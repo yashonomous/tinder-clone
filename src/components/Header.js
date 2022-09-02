@@ -1,14 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  ArrowBackIos,
-  ClearRounded,
-  FavoriteRounded,
-  FlashOnRounded,
-  ForumRounded,
-  PersonRounded,
-  ReplayRounded,
-  StarRounded,
-} from "@material-ui/icons";
+import { ArrowBackIos, ForumRounded, PersonRounded } from "@material-ui/icons";
 import { IconButton, Menu, MenuItem } from "@material-ui/core";
 import "../styles/Header.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";

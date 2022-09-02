@@ -15,12 +15,12 @@ export default function useWindowDimensions() {
     getWindowDimensions()
   );
 
-  const [{ user }, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
 
   useEffect(() => {
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
-      //   console.log(getWindowDimensions());
+      console.log(getWindowDimensions());
       dispatch({
         type: actionTypes.SET_WINDOW_SIZE,
         size: getWindowDimensions(),

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Fade, Modal } from "@material-ui/core";
 import "../styles/Login.css";
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,6 +9,7 @@ import { useStateValue } from "../commons/StateProvider";
 import { actionTypes } from "../commons/reducer";
 import { useNavigate } from "react-router-dom";
 import HamMenuDrawer from "./HamMenuDrawer";
+import useWindowDimensions from "../commons/useWindowDimension";
 
 function getModalStyle() {
   const top = 50;
@@ -37,8 +38,10 @@ function Login() {
   const [openModal, setOpenModal] = useState(false);
   const [modalStyle] = React.useState(getModalStyle);
   const [showMoreOptions, setShowMoreOptions] = useState(false);
-  const [{ user, windowSize }, dispatch] = useStateValue();
+  const [{ windowSize }, dispatch] = useStateValue();
   const navigate = useNavigate();
+
+  useWindowDimensions();
 
   const handleClose = () => {
     setOpenModal(false);
@@ -58,7 +61,7 @@ function Login() {
       });
   };
 
-  //   console.log(windowSize);
+  console.log(windowSize);
 
   return (
     <div className="login">
@@ -78,7 +81,7 @@ function Login() {
                 <h3>download</h3>
               </div>
             ) : (
-              <h1>wid</h1>
+              <></>
             )}
           </div>
           <div className="login__headerRight">

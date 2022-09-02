@@ -1,6 +1,9 @@
 export const initialState = {
   user: {},
-  windowSize: {},
+  windowSize: {
+    height: window.innerHeight,
+    width: window.innerWidth,
+  },
 };
 
 export const actionTypes = {

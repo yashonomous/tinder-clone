@@ -4,12 +4,10 @@ import {
   Drawer,
   List,
   ListItem,
-  Divider,
   ListItemText,
-  ListItemIcon,
   IconButton,
 } from "@material-ui/core";
-import { Close, Inbox, Mail, Menu } from "@material-ui/icons";
+import { Close, Menu } from "@material-ui/icons";
 import "../styles/HamMenuDrawer.css";
 
 function HamMenuDrawer({ setOpenModal }) {
@@ -30,6 +28,10 @@ function HamMenuDrawer({ setOpenModal }) {
       return;
     }
 
+    setshowSubMenu({
+      ...showSubMenu,
+      products: false,
+    });
     setShowDrawer(!showDrawer);
   };
 
@@ -61,7 +63,7 @@ function HamMenuDrawer({ setOpenModal }) {
           <div className="hammenudrawer__menuItems">
             {["products", "learn", "safety", "support", "download"].map(
               (text, index) => (
-                <>
+                <div key={index}>
                   <div
                     className="hammenudrawer__menuItem"
                     onClick={() => {
@@ -88,7 +90,7 @@ function HamMenuDrawer({ setOpenModal }) {
                       </List>
                     </div>
                   )}
-                </>
+                </div>
               )
             )}
           </div>

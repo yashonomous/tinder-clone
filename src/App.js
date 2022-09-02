@@ -4,16 +4,13 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { useStateValue } from "./commons/StateProvider";
 import useWindowDimensions from "./commons/useWindowDimension";
-import Cards from "./components/Cards";
 import Chats from "./components/Chats";
 import ChatScreen from "./components/ChatScreen";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Home from "./components/Home";
 import Login from "./components/Login";
 
 function App() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   useWindowDimensions();
 

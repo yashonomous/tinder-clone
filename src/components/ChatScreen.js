@@ -1,4 +1,4 @@
-import { Favorite, FavoriteBorderOutlined } from "@material-ui/icons";
+import { FavoriteBorderOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import "../styles/ChatScreen.css";
 import Header from "./Header";

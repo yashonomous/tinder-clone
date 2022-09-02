@@ -1,4 +1,3 @@
-import { Link } from "@material-ui/core";
 import React from "react";
 import "../styles/Chats.css";
 import Header from "./Header";

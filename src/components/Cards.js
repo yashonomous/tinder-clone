@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import TinderCard from "react-tinder-card";
 import { db } from "../commons/firebase";
 import "../styles/Cards.css";
-import Footer from "./Footer";
-import Header from "./Header";
 
 function Cards() {
   const [people, setPeople] = useState([]);
