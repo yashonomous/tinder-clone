@@ -40,3 +40,13 @@
   padding: 0.5rem;
   background: white;
 }
+
+@media (max-width: 550px) {
+  .footer__refreshIcon {
+    margin-left: 0;
+  }
+
+  .footer__lightningIcon {
+    margin-right: 0;
+  }
+}

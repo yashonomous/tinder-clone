@@ -11,6 +11,7 @@ import { actionTypes } from "../commons/reducer";
 function Header() {
   const [isChatScreen, setIsChatScreen] = useState(false);
   const [isChatsScreen, setIsChatsScreen] = useState(false);
+  const [isHomeScreen, setIsHomeScreen] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [{ user }, dispatch] = useStateValue();
   const location = useLocation();
@@ -27,6 +28,12 @@ function Header() {
       setIsChatScreen(true);
     } else {
       setIsChatScreen(false);
+    }
+
+    if (location.pathname === "/") {
+      setIsHomeScreen(true);
+    } else {
+      setIsHomeScreen(false);
     }
   }, [location]);
 
@@ -69,7 +76,7 @@ function Header() {
             />
           )}
         </IconButton>
-        <h3>{user.displayName}</h3>
+        {isHomeScreen && <h3>{user.displayName}</h3>}
         <Menu
           anchorEl={anchorEl}
           keepMounted

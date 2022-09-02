@@ -4,6 +4,7 @@
   /* max-height: 15vh; */
   align-items: stretch;
   margin-top: 1rem;
+  /* width: 100vw; */
 }
 
 .header__profileIcon {
@@ -15,7 +16,7 @@
 }
 
 .header__profileIcon > h3 {
-  color: lightgray;
+  color: gray;
 }
 
 .header__tinderLogo {

@@ -61,7 +61,7 @@ function Login() {
       });
   };
 
-  console.log(windowSize);
+  //   console.log(windowSize);
 
   return (
     <div className="login">
